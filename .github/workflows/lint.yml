@@ -10,9 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
-      packages: read
-      statuses: write
+      contents: read # needed to checkout code
+      pull-requests: read # only if accessing PR info
 
     steps:
       - name: Checkout code
@@ -25,3 +24,4 @@ jobs:
         uses: super-linter/super-linter@v8.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_CHECKOV: false

@@ -3,7 +3,7 @@ from urllib.request import urlopen
 
 import pymysql
 
-# test codeQL
+# test codeQL and lint
 
 db_config = {"host": "mydatabase.com", "user": "admin", "password": "secret123"}
 
