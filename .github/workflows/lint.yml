@@ -25,17 +25,3 @@ jobs:
         uses: super-linter/super-linter@v8.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-          # Focus only on Python linters you actually need:
-          VALIDATE_PYTHON_BLACK: true
-          VALIDATE_PYTHON_RUFF: true
-
-          # Disable unwanted non-Python checks that caused errors:
-          VALIDATE_CHECKOV: false
-          VALIDATE_GITHUB_ACTIONS_ZIZMOR: false
-          VALIDATE_YAML_PRETTIER: false
-
-          # Optional: silence some other categories
-          VALIDATE_JSCPD: false
-          VALIDATE_BIOME_FORMAT: false
-          VALIDATE_BIOME_LINT: false
