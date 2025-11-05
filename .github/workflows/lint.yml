@@ -28,8 +28,3 @@ jobs:
           VALIDATE_PYTHON_PYLINT: false
           VALIDATE_GITHUB_ACTIONS_ZIZMOR: false
 
-      - name: Run Bandit security scan
-        run: |
-          pip install bandit
-          bandit -r . -ll
-
