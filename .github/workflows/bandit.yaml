@@ -1,0 +1,19 @@
+name: Lint and Security
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Run Bandit security scan
+        run: |
+           pip install bandit
+           bandit -r . -ll
+
