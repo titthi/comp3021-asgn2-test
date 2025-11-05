@@ -29,9 +29,6 @@ jobs:
           # Focus only on Python linters you actually need:
           VALIDATE_PYTHON_BLACK: true
           VALIDATE_PYTHON_RUFF: true
-          VALIDATE_PYTHON_PYLINT: false
-          VALIDATE_PYTHON_MYPY: false
-          VALIDATE_PYTHON_ISORT: false
 
           # Disable unwanted non-Python checks that caused errors:
           VALIDATE_CHECKOV: false
