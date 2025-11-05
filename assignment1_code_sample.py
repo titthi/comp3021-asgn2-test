@@ -1,6 +1,7 @@
 import os
 import pymysql
 from urllib.request import urlopen
+# test codeQL
 
 db_config = {
     'host': 'mydatabase.com',
